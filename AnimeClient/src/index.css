@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+
+@font-face {
+  font-family: 'AgencyFB';
+  src: local('AgencyFB'), url("../public/fonts/AgencyFB/AgencyFB-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Fujimaru';
+  src: local('Fujimaru'), url("../public/fonts/Fujimaru/Fujimaru-Regular.ttf") format('truetype');
+}
+
+html,
+body,
+#root {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  width: auto;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  margin: 0;
+}
+
+@layer base {
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    @apply w-full rounded border-gray-300 
+          shadow-sm focus:ring-red-500 focus:border-red-500;
+  }
+}

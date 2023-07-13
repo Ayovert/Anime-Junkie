@@ -1,0 +1,68 @@
+.cardClass{
+width: 20%;
+
+}
+
+
+
+
+  @media screen and (max-width: 1110px) {
+  .cardClass{
+  width: 30%;
+  }
+  }
+
+  @media screen and (max-width: 767px) {
+  .cardClass{
+  width: 100%;
+  }
+  }
+
+.cardClass  .imageDiv{
+height: 0;
+}
+
+.cardClass .imageTag{
+height: 8rem
+}
+
+
+
+
+.ratingDiv {
+ /* top: 50%;
+  left: 50%;
+  
+  
+  position: absolute;*/
+  transform: translate(-35%, 10%);
+  direction: rtl;
+}
+
+.ratingDiv span {
+  transform: translate(10%, 10%);
+}
+.ratingDiv svg {
+  transition: all 0.5s;
+  margin: 4px;
+}
+.ratingDiv  svg:hover {
+  fill: gold;
+  transform: scale(1.3);
+}
+/*gold//#ffd700*/
+.rating0:hover ~ svg {
+  fill: gold;
+}
+.rating1:hover ~ svg {
+  fill: gold;
+}
+.rating2:hover ~ svg  {
+  fill: gold;
+}
+.rating3:hover ~ svg {
+  fill: gold;
+}
+.rating4:hover ~ svg {
+  fill: gold;
+}
